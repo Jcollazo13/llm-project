@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .guitar {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .guitar img {
+            max-width: 200px;
+            height: auto;
+        }
+        .guitar-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .guitar-info h2 {
+            margin-top: 0;
+        }
+        .guitar-info p {
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guitar Shop</h1>
+    </header>
+    <div class="container">
+        <div class="guitar">
+            <img src="guitar1.jpg" alt="Guitar 1">
+            <div class="guitar-info">
+                <h2>Guitar Model 1</h2>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Price: $999</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="guitar">
+            <img src="guitar2.jpg" alt="Guitar 2">
+            <div class="guitar-info">
+                <h2>Guitar Model 2</h2>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Price: $1299</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <!-- Add more guitars here -->
+    </div>
+    <footer>
+        <p>&copy; 2024 Guitar Shop</p>
+    </footer>
+</body>
+</html>
