@@ -3,36 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Guitar Store</title>
+    <title>Guitar Shop</title>
     <style>
         /* Add your custom CSS styles here */
         body {
             font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
         }
-        .guitar-listing {
-            border: 1px solid #ccc;
-            padding: 10px;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .guitar-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
             margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        /* Add more styles for buttons, images, etc. */
+        .guitar-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .guitar-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .guitar-description {
+            font-size: 14px;
+            color: #555;
+        }
+        .guitar-price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #007bff;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Guitar Store</h1>
-
-    <!-- Example guitar listing -->
-    <div class="guitar-listing">
-        <h2>Fender Stratocaster</h2>
-        <p>Classic electric guitar with versatile tones.</p>
-        <p>Price: $999</p>
-        <img src="guitar-image.jpg" alt="Fender Stratocaster">
-        <button>Add to Cart</button>
+    <div class="container">
+        <div class="guitar-card">
+            <img src="guitar1.jpg" alt="Electric Guitar" class="guitar-image">
+            <h2 class="guitar-title">Fender Stratocaster</h2>
+            <p class="guitar-description">Classic electric guitar with versatile tones.</p>
+            <p class="guitar-price">$899.99</p>
+        </div>
+        <div class="guitar-card">
+            <img src="guitar2.jpg" alt="Acoustic Guitar" class="guitar-image">
+            <h2 class="guitar-title">Taylor 314ce</h2>
+            <p class="guitar-description">High-quality acoustic guitar with rich sound.</p>
+            <p class="guitar-price">$1,299.00</p>
+        </div>
+        <!-- Add more guitar cards as needed -->
     </div>
-
-    <!-- Repeat the above structure for other guitar listings -->
-
-    <footer>
-        <p>Contact us: info@myguitarstore.com</p>
-    </footer>
 </body>
 </html>
