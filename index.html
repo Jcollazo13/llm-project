@@ -1,22 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guitar Store</title>
-    <link rel="stylesheet" href="style.css">
+	<title>Guitar Shop</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Guitar Store</h1>
-    </header>
-    <main>
-        <section id="guitar-list">
-            <!-- Guitars will be listed here -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Guitar Store. All rights reserved.</p>
-    </footer>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Guitars</a></li>
+				<li><a href="#">Accessories</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section class="hero">
+			<h1>Welcome to Guitar Shop!</h1>
+			<p>Buy and sell new and used guitars online</p>
+			<button>Explore Our Collection</button>
+		</section>
+		
+		<section class="guitar-listings">
+			<h2>Featured Guitars</h2>
+			<ul>
+				<li>
+					<img src="guitar1.jpg" alt="Guitar 1">
+					<h3>Fender Stratocaster</h3>
+					<p>2019 model, excellent condition, with hardcase. $1,200</p>
+					<button>View Details</button>
+				</li>
+				<li>
+					<img src="guitar2.jpg" alt="Guitar 2">
+					<h3>Gibson Les Paul</h3>
+					<p>2015 model, mint condition, with original packaging. $2,500</p>
+					<button>View Details</button>
+				</li>
+				<li>
+					<img src="guitar3.jpg" alt="Guitar 3">
+					<h3>Ibanez RG</h3>
+					<p>2012 model, good condition, with softcase. $800</p>
+					<button>View Details</button>
+				</li>
+				<!-- Add more guitar listings here -->
+			</ul>
+		</section>
+		
+		<section class="sell-your-guitar">
+			<h2>Sell Your Guitar</h2>
+			<p>Get a free appraisal and sell your guitar to us!</p>
+			<form>
+				<label for="guitar-make">Guitar Make:</label>
+				<input type="text" id="guitar-make" name="guitar-make"><br><br>
+				<label for="guitar-model">Guitar Model:</label>
+				<input type="text" id="guitar-model" name="guitar-model"><br><br>
+				<label for="guitar-year">Guitar Year:</label>
+				<input type="number" id="guitar-year" name="guitar-year"><br><br>
+				<label for="guitar-condition">Guitar Condition:</label>
+				<select id="guitar-condition" name="guitar-condition">
+					<option value="excellent">Excellent</option>
+					<option value="good">Good</option>
+					<option value="fair">Fair</option>
+				</select><br><br>
+				<button>Sell Your Guitar</button>
+			</form>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2024 Guitar Shop</p>
+		<ul>
+			<li><a href="#">Terms and Conditions</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</footer>
+	
+	<!-- Add JavaScript files here -->
+	<script src="script.js"></script>
 </body>
 </html>
